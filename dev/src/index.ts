@@ -1,5 +1,4 @@
 import "./style.css";
-export const isMobile = window.innerWidth < 1000;
 export const imports = {
   articles: [
     require("./index.html"),
@@ -34,32 +33,3 @@ export const imports = {
     require("./assets/images/space_bk.png"),
   ],
 };
-
-//Scroll to top of page when the page loads:
-setTimeout(() => {
-  document.body.scrollTo(0, 0);
-}, 0.1);
-
-//When the page loads:
-document.addEventListener("DOMContentLoaded", () => {
-  //Add a listener to scroll to fade in articles as needded:
-  const handleScroll = () => {
-    const fadeElements = document.querySelectorAll(".fade-in");
-    fadeElements.forEach((el) => {
-      const element = el as HTMLElement;
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const visibilityThreshold = isMobile ? 0.9 : 0.8;
-      if (rect.top < windowHeight * visibilityThreshold) {
-        element.classList.add("show");
-      } else {
-        element.classList.remove("show");
-      }
-    });
-  };
-  window.addEventListener("scroll", handleScroll);
-  handleScroll();
-  setTimeout(() => {
-    handleScroll();
-  }, 100);
-});
