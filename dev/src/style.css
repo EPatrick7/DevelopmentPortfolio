@@ -63,21 +63,15 @@ body {
 }
 
 
-.subtitle-desktop-only{
+.subtitle{
   visibility:visible;
   width:auto;
   height:auto;
+  white-space: nowrap;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.subtitle-mobile-only{
-  visibility:hidden;
-  width:0;
-  height:0;
-  font-size: 0rem;
-  margin-bottom: 0rem;
-}
 
 
 @media (max-width: 768px) {
@@ -97,22 +91,7 @@ body {
   .social-icons {
     justify-content: center;
   }
-  
-  .subtitle-desktop-only{
-    visibility:hidden;
-    width:0;
-    height:0;
-    font-size: 0rem;
-    margin-bottom: 0rem;
-  }
 
-  .subtitle-mobile-only{
-    width:auto;
-    height:auto;
-    visibility:visible;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
 
 }
 
@@ -129,6 +108,7 @@ body {
   margin-top: 2rem;
   margin-bottom: -1rem;
   visibility:visible;
+  white-space: nowrap;
   text-align: left;
 }
 
@@ -281,6 +261,12 @@ body {
 
 .tag-mobile {
   background: #1bb910;
+  color: white;
+}
+
+
+.tag-vr {
+  background: #10b92c;
   color: white;
 }
 
