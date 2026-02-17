@@ -45,8 +45,8 @@ body {
 }
 
 .social-icons img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 8px;
   background: #343434b3;
   transition: transform 0.2s;
@@ -116,3 +116,189 @@ body {
 
 }
 
+
+
+.projects {
+  padding: 4rem 2rem;
+  background-color: #181818;
+}
+
+.section-title {
+  font-family: 'ArialRounded';
+  font-size: 2.2rem;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  visibility:visible;
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+.section-title{
+  text-align: center;
+  visibility:hidden;
+  font-size:0;
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+}
+
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  background: #242424;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 1.2rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #cfcfcf;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  margin-bottom: 0.3rem;
+}
+
+
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card:hover .card-image img {
+  transform: scale(1.08);
+  transition: transform 0.4s ease;
+}
+
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.tag-cpp {
+  background: #2563EB;
+  color: white;
+}
+
+.tag-c {
+  background: #1D4ED8;
+  color: white;
+}
+
+.tag-csharp {
+  background: #3B82F6;
+  color: white;
+}
+
+.tag-javascript {
+  background: #1d97d8;
+  color: white;
+}
+
+
+.tag-pixi {
+  background: #831d95;
+  color: white;
+}
+
+.tag-unity {
+  background: #4C1D95;
+  color: white;
+}
+
+.tag-ue5 {
+  background: #111827;
+  color: white;
+}
+
+.tag-aaa {
+  background: #059669;
+  color: white;
+}
+
+.tag-indie {
+  background: #10B981;
+  color: white;
+}
+
+.tag-freelance {
+  background: #34D399;
+  color: white;
+}
+
+
+.tag-jam {
+  background: #11ab72;
+  color: white;
+}
+
+.tag-mobile {
+  background: #1bb910;
+  color: white;
+}
+
+.tag-multiplayer {
+  background: #10b967;
+  color: white;
+}
+
+
+.tag-university {
+  background: #6B7280;
+  color: white;
+}
+
+.tag-gamedev {
+  background: #9CA3AF;
+  color: #ddd;
+}
