@@ -13,7 +13,12 @@ export const imports = {
     require("./assets/linkedin.png"),
   ],
   article_images: [
+    require("./assets/images/Avatar1.png"),
+    require("./assets/images/WTEW1.png"),
     require("./assets/images/Frontiers1.png"),
+    require("./assets/images/Pipeline1.png"),
+    require("./assets/images/BugsVBunnies.jpg"),
+    require("./assets/images/Chronomancy.jpg"),
     require("./assets/images/Astronomous1.PNG"),
     require("./assets/images/Astronomous2.PNG"),
     require("./assets/images/Astronomous3.PNG"),

@@ -120,34 +120,25 @@ body {
 
 .projects {
   padding: 4rem 2rem;
-  background-color: #181818;
+  margin-top: -4rem;
 }
 
 .section-title {
   font-family: 'ArialRounded';
   font-size: 2.2rem;
-  margin-top: -3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
   visibility:visible;
   text-align: left;
 }
 
 
-@media (max-width: 768px) {
-.section-title{
-  text-align: center;
-  visibility:hidden;
-  font-size:0;
-  margin-top: -3rem;
-  margin-bottom: 1rem;
-}
-
-}
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+  margin-top:2rem;
 }
 
 .project-card {
@@ -257,7 +248,7 @@ body {
 }
 
 .tag-ue5 {
-  background: #111827;
+  background: #810b9f;
   color: white;
 }
 
@@ -276,6 +267,12 @@ body {
   color: white;
 }
 
+.tag-opensource {
+  background: #0eaf74;
+  color: white;
+}
+
+
 
 .tag-jam {
   background: #11ab72;
@@ -289,6 +286,12 @@ body {
 
 .tag-multiplayer {
   background: #10b967;
+  color: white;
+}
+
+
+.tag-steam {
+  background: #1bb910;
   color: white;
 }
 
