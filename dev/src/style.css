@@ -37,6 +37,13 @@ body {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
+.name-desktop-only {
+  font-family: 'ArialRounded';
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  visibility:visible;
+}
+
 
 
 .social-icons {
@@ -63,7 +70,7 @@ body {
 }
 
 
-.subtitle{
+.subtitle-desktop-only{
   visibility:visible;
   width:auto;
   height:auto;
@@ -72,10 +79,20 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
+.subtitle-mobile-only{
+  visibility:hidden;
+  width:0;
+  height:0;
+  font-size: 0rem;
+  margin-bottom: 0rem;
+}
 
 @media (max-width: 768px) {
-
+  .name-desktop-only {
+  font-family: 'ArialRounded';
+  font-size: 0rem;
+  visibility:hidden;
+  }
   .intro {
     flex-direction: column;
     align-items: center;
@@ -92,6 +109,22 @@ body {
     justify-content: center;
   }
 
+    .subtitle-desktop-only{
+    visibility:hidden;
+    width:0;
+    height:0;
+    font-size: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .subtitle-mobile-only{
+    width:auto;
+    height:auto;
+    visibility:visible;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
 
 }
 
@@ -100,6 +133,45 @@ body {
 .projects {
   padding: 4rem 2rem;
   margin-top: -4rem;
+}
+.back-bttn-mobile {
+  font-family: 'ArialRounded';
+  font-size: 0;
+  visibility:hidden;
+  white-space: nowrap;
+  text-align: left;
+  color:"white";
+  text-decoration: none;
+}
+.back-bttn-desktop {
+  font-family: 'ArialRounded';
+  font-size: 2.2rem;
+  white-space: nowrap;
+  text-align: left;
+  visibility:visible;
+  color:"white";
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.back-bttn-desktop {
+  font-family: 'ArialRounded';
+  font-size: 0;
+  visibility:hidden;
+  white-space: nowrap;
+  text-align: left;
+  color:"white";
+  text-decoration: none;
+}
+.back-bttn-mobile {
+  font-family: 'ArialRounded';
+  font-size: 2.2rem;
+  white-space: nowrap;
+  visibility:visible;
+  text-align: left;
+  color:"white";
+  text-decoration: none;
+}
 }
 
 .section-title {
@@ -110,8 +182,14 @@ body {
   visibility:visible;
   white-space: nowrap;
   text-align: left;
+  color:"white";
+  text-decoration: none;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+}
 
 
 .project-grid {
@@ -290,4 +368,33 @@ body {
 .tag-gamedev {
   background: #9CA3AF;
   color: #ddd;
+}
+
+
+.projects-focus {
+  padding: 4rem 1rem;
+  margin-top: -4rem;
+}
+
+.project-focus {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  opacity:0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-focus-card {
+  background: #242424;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-focus-description {
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+  color: #cfcfcf;
 }

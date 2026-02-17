@@ -3,6 +3,17 @@ export const imports = {
   articles: [
     require("./index.html"),
     require("./assets/fonts/arialroundedmtbold.ttf"),
+
+    require("./assets/articles/frontiers.html"),
+    require("./assets/articles/avatar.html"),
+    require("./assets/articles/wtew.html"),
+
+    require("./assets/articles/charybdis.html"),
+    require("./assets/articles/scraprooms.html"),
+    require("./assets/articles/charybdis.html"),
+    require("./assets/articles/chronomancy.html"),
+    require("./assets/articles/bugsvbunnies.html"),
+    require("./assets/articles/convergence.html"),
   ],
   images: [
     require("./assets/icon.png"),
@@ -26,3 +37,9 @@ export const imports = {
     require("./assets/images/PMaren2.PNG"),
   ],
 };
+
+Array.from(document.getElementsByClassName("project-focus"))?.forEach(
+  (focus: any) => {
+    focus.style.opacity = "1";
+  },
+);
