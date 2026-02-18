@@ -173,11 +173,11 @@ body {
 }
 
 .back-bttn-mobile:hover {
-  transform:  scale(1.1);
+  transform: translateX(-22.5px) translateY(-18px) scale(1.1);
 }
 
 .back-bttn-mobile img:hover{
-  transform:   scale(1);
+  transform:  translateY(22.5px)   translateX(22.5px)  scale(0.5);
 }
 
 
