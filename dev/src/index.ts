@@ -21,6 +21,7 @@ export const imports = {
     require("./assets/email.png"),
     require("./assets/github.png"),
     require("./assets/itch-io.png"),
+    require("./assets/back.png"),
     require("./assets/linkedin.png"),
   ],
   article_images: [
