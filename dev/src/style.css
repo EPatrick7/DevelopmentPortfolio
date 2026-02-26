@@ -221,6 +221,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -439,4 +440,7 @@ a:link, a:visited, a:hover, a:active {
     border: none;
     transform:translateX(-7.5px) translateY(-20px);
     overflow: hidden;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
 }
